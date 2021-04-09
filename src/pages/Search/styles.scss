@@ -1,0 +1,27 @@
+.search-container {
+    background: #e6f7ff;
+    border-radius: 16px;
+    margin: 54px 90px 0px 90px;    
+    padding: 65px 94px 42px 94px;
+    
+}
+.search-imput {
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    align-items: center;
+    padding: 8px 17px;
+    width: 676px;
+    height: 40px;
+    margin-bottom: 24px;
+}
+.form-search {
+    display: flex;
+    flex-direction: column;
+}
+.search-title {
+    font-size: 38px;
+    line-height: 46px;
+    color: #262626;
+    padding-bottom: 12px;
+}
