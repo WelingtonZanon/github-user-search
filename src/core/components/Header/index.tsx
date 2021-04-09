@@ -1,11 +1,14 @@
+import { Link } from "react-router-dom";
 import "./styles.scss"
 
 const Header = () => (
-     <header className="header">
-          <div className="header-text">
-               Bootcamp DevSuperior
+     <Link to="/">
+          <header className="header">
+               <div className="header-text">
+                    Bootcamp DevSuperior
           </div>
-     </header>
+          </header>
+     </Link>
 );
 
 export default Header;

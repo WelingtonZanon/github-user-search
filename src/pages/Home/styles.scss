@@ -1,0 +1,30 @@
+.home-container {
+    display: flex;
+    display: block;
+    margin-top: 62px;
+    padding-left: 120px;
+    padding-top: 110px;
+    margin-bottom: 265px;
+    width: 720px;
+    margin: 0;
+}
+.text-title {
+    font-size: 48px;
+    line-height: 64px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #062847;
+}
+.description {
+    padding-top: 25px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #5a6774;
+    padding-bottom: 45px;
+    margin: 0;
+}
+
+.text-email{
+    color: #1890FF;
+}
