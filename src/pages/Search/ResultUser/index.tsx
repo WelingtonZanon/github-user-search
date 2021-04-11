@@ -5,6 +5,7 @@ import ImageLoader from 'pages/Loaders/ImageLoader'
 import ContentLoader from 'pages/Loaders/ContentLoader'
 import { useEffect, useState } from 'react'
 import './styles.scss'
+import dayjs from 'dayjs'
 
 type Props = {
     name: string;
@@ -25,10 +26,14 @@ const ResultUser = ({ name, click }: Props) => {
             })
             .catch(function (error) {
                 //error
-                console.log(error.toJSON());
+                //console.log(error.toJSON());
+                if(name!==""){
+                    alert(`Usuário ${name} não localizado.`);
+                }
                 setRender(false);
             }).finally(() => setIsLoading(false));
-
+            
+            
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [click])
     return (
@@ -53,7 +58,7 @@ const ResultUser = ({ name, click }: Props) => {
                                         <li className="result-text">Empresa: {user?.company}</li>
                                         <li className="result-text">Website/Blog: {user?.blog}</li>
                                         <li className="result-text">Localidade: {user?.location}</li>
-                                        <li className="result-text">Membro desde: {user?.created_at}</li>
+                                        <li className="result-text">Membro desde: {(dayjs(`${user?.created_at}`).format("DD/MM/YYYY"))}</li>
                                     </ul>
                                 </div>
                             </div>
